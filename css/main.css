@@ -11,40 +11,16 @@ body {
   box-sizing: border-box;
 }
 
-@font-face {
-  src: url(
-    https://fonts.googleapis.com/css?family=Poppins:100,
-    100i,
-    200,
-    200i,
-    300,
-    300i,
-    400,
-    400i,
-    500,
-    500i,
-    600,
-    600i,
-    700,
-    700i,
-    800,
-    800i,
-    900,
-    900i
-  );
-  font-family: nos;
-}
-
 .container {
   background: linear-gradient(to top, #fbc2eb 0%, #a18cd1 100%);
   height: 100vh;
-  width: 100%;
-  display: flex;
+  /* width: 100%; */
+  /* display: flex; */
   padding: 20px;
-  flex-direction: column;
+  /* flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  text-align: center;
+  text-align: center; */
 }
 
 /* form box */
@@ -58,9 +34,9 @@ body {
 }
 
 .form-wrapper {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; */
   width: 100%;
   background: #000000;
   border-radius: 8px 8px 8px 8px;
@@ -81,14 +57,14 @@ select {
   color: #aaaaaa;
   font-size: 1rem;
   border-bottom: 1px solid #333333;
-  border-radius: 0px;
-  padding-bottom: 6px;
+  /* border-radius: 0px; */
+  /* padding-bottom: 6px; */
 }
 
-.select-field {
+/* .select-field {
   margin-bottom: 20px;
   margin-top: 20px;
-}
+} */
 
 form {
   padding-left: 20px;
@@ -131,34 +107,19 @@ input {
   background-color: transparent;
 }
 
-.selectWrapper {
-  position: relative;
-}
 
-.selectWrapper:after {
-  content: ">";
-  font: 17px "Consolas", monospace;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  position: absolute;
-  pointer-events: none;
 
-  right: 10px;
-  bottom: 190px;
-  color: white;
-}
 
-@media only screen and (min-width: 768px) and (max-width: 1920px) {
+
+@media (min-width: 768px) {
   .container {
     align-items: center;
   }
 
   .form-wrapper {
-    display: inline-block;
-    flex-direction: row;
-    flex-wrap: wrap;
+    /* display: inline-block; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
     height: 450px;
     width: 616px;
   }
@@ -167,21 +128,21 @@ input {
     width: 308px;
     height: 450px;
     border-radius: 8px 0px 0px 8px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
   }
 
   form {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     padding-left: 40px;
   }
 
   .form {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
   }
 
   .field {

@@ -23,58 +23,60 @@
 
     <!-- CSS-->
     <link href="css/base.css" rel="stylesheet" media="all" />
-    <link href="css/main.css" rel="stylesheet" media="all" />
+    <link href="css/new.css" rel="stylesheet" media="all" />
   </head>
 
   <body>
     <!-- Your html here -->
+    <div class="form-wrapper">
+      <div class="form">
+        <!-- The pink image -->
+        <img src="images/bg-heading-03.jpg" alt="heading image" />
+        <!-- the actual form -->
+        <form action="">
+          <h1>Registration Info</h1>
+          <!-- Name -->
+          <label for="name"></label>
+          <input
+            id="name"
+            placeholder="Name"
+            name="name"
+            type="text"
+            required
+          />
+          <!-- Date -->
+          <label for="date"></label>
+          <input
+            id="date"
+            placeholder="mm/dd/yyyy"
+            name="date"
+            type="text"
+          />
+          <!-- Experience -->
+          <label for="experience"></label>
+          <select class="select-field" name="experience" id="experience">
+            <option id="experience" value="1">Experience</option>
 
-    <div class="container">
-      <div class="form-wrapper">
-        <div class="form">
-          <img src="images/bg-heading-03.jpg" alt="heading image" />
-          <form action="">
-            <h1>Registration Info</h1>
-            <div class="field">
-              <label for="name"></label>
-              <input
-                id="name"
-                placeholder="Name"
-                name="name"
-                type="text"
-                required
-              />
-            </div>
-            <div class="field">
-              <label for="date"></label>
-              <input
-                id="date"
-                placeholder="mm/dd/yyyy"
-                name="date"
-                type="text"
-              />
-            </div>
-            <select class="select-field" name="experience" id="experience">
-              <option id="experience" value="experience">Experience</option>
-            </select>
-            <div class="field">
-              <label for="email"></label>
-              <input id="email" placeholder="Email" name="email" type="email" />
-            </div>
-            <div class="field">
-              <label for="phone"></label>
-              <input
-                id="phone"
-                placeholder="Phone (Optional)"
-                name="phone"
-                type="text"
-              />
-            </div>
-
-            <button class="submit-btn" type="submit">Submit</button>
-            <div class="selectWrapper"></div>
-          </form>
-        </div>
+          </select>
+          <!-- Email -->
+          <label for="email"></label>
+          <input 
+            id="email"
+            placeholder="Email" 
+            name="email" 
+            type="email" />
+          <!-- Phone -->
+          <label for="phone"></label>
+          <input
+            id="phone"
+            placeholder="Phone (Optional)"
+            name="phone"
+            type="text"
+          />
+          <!-- Submit -->
+          <button class="submit-btn" type="submit">Submit</button>
+          <div class="selectWrapper"></div>
+        </form>
       </div>
     </div>
   </body>
